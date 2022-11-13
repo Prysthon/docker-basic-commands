@@ -1,6 +1,6 @@
 FROM node:14
+WORKDIR /todo-app/back-end/
 EXPOSE 3001
-WORKDIR /back-end
 ADD node_modules.tar.gz .
 COPY . .
-RUN "npm start"
+CMD ["npm", "start"]
